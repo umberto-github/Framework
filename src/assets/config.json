@@ -1,0 +1,14 @@
+{
+    "Commento_WebApiBaseUrl":"Url base contenente la connessione alla web api",
+    "WebApiBaseUrl": "https://localhost:7016/api",
+    "Commento_WebApi_js_alarms_anomalies":"viene utilizzato solo nel file javascript alarm_warning.js",
+    "WebApi_js_alarms_anomalies": "/frwrightmenu/",
+    "Commento_WebApiAlarms":"Viene utilizzato da Angular per ottenere i dati degli ultimi 10 allarmi attivi",
+    "WebApiAlarms": "/frwrightmenu/alarms",
+    "Commento_WebApiAnomalies":"Viene utilizzato da Angular per ottenere i dati delle ultime 10 anomalie attive",
+    "WebApiAnomalies": "/frwrightmenu/anomalies",
+    "Commento_WebApiOperators":"Viene utilizzato da Angular per ottenere i dati degli operatori attivi sulla linea",
+    "WebApiOperators": "/operator/operinfo",
+    "Commento_WebApiLogin":"Viene chiesto alla web api se il login è valido",
+    "WebApiLogin":"/login/check"
+}

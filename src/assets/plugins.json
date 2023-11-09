@@ -1,0 +1,26 @@
+[
+    {
+	    "Descrizione": "Plugin con funzionalità di invio ricetta",
+        "name": "Send Recipe",
+		"path": "assets/plugin/sendrecipe/index.html",
+		"key" : "1",
+		"width" : "100%",
+		"height" : "1000px"
+    },
+    {
+	    "Descrizione": "Plugin con funzionalità di Utility",
+        "name": "Utility",
+		"path": "assets/plugin2.html",
+		"key" : "2",
+		"width" : "100%",
+		"height" : "1000px"
+    },
+	{
+	    "Descrizione": "Plugin con funzionalità di Tracciabilità",
+        "name": "Traceabiliy",
+		"path": "assets/plugin/traceability/index.html",
+		"key" : "3",
+		"width" : "100%",
+		"height" : "1000px"
+    }
+]

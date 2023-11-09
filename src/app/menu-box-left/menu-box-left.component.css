@@ -1,0 +1,84 @@
+.loginbox-li{
+    padding : 10px;
+}
+
+
+.loginbox-a {
+    display:inline;
+    background-color: #DB592A;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginbox-a.wow-effect:hover {
+    background-color: #45a049;
+}
+
+.logged-user{
+    display:inline;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.link-disabilitato {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: gray; /* Cambia il colore del testo per indicare il link disabilitato */
+  }
+
+
+
+
+#login-box #login_user{
+    color:#fff;
+}
+
+
+.login-show{
+    width: 10px;
+    height: 96px;
+    border: 2px solid #DB592A;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index:99;
+    background-color: #0000F9;
+    color:#fff;
+    /*opacity:0.5;*/
+}
+
+#login-info-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: -9px;
+    padding-right: 28px;
+}
+
+#logged_user{
+    display:none;
+}
+
+#login-box-triangle{
+    position: absolute;
+    top: 48px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.login-show:hover{
+    width:200px;
+    #logged_user{
+        display:block;
+    }
+    #login-box-triangle{
+        right:198px;
+    }
+
+}
+
+

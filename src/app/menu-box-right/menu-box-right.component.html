@@ -1,0 +1,75 @@
+ <!-- Right navbar links -->
+<ul class="navbar-nav ml-auto">
+  <!-- Messages Dropdown Menu -->
+  <li class="nav-item dropdown">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="far fa-comments"></i>
+      <span class="badge badge-danger navbar-badge">{{totaloperators}}</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+      <div *ngFor="let operator of operators">
+        <a href="#" class="dropdown-item">
+          <!-- Message Start -->
+          <div class="media">
+            <img src="{{operator.img}}" alt="User Avatar"
+              class="img-size-50 mr-3 img-circle">
+            <div class="media-body">
+              <h3 class="dropdown-item-title">
+                {{operator.name}} {{operator.surname}} -- Operatore Attivo
+                <span class="float-right text-sm text-danger"><i
+                    class="fas fa-star operator-icon-star"></i></span>
+              </h3>
+              <p class="text-sm">Postazione -- {{operator.location}}</p>
+              <p class="text-sm text-muted"><i class="far fa-clock mr-1">
+                  {{operator.regDate}}</i></p>
+            </div>
+          </div>
+          <!-- Message End -->
+        </a>
+      </div>
+
+      <div class="dropdown-divider"></div>
+      <div class="dropdown-divider"></div>
+      <!--<a href="#" class="dropdown-item dropdown-footer">See All Messages</a>-->
+    </div>
+  </li>
+  <!-- Notifications Dropdown Menu -->
+  <li class="nav-item dropdown ">
+    <a class="nav-link" data-toggle="dropdown" href="#">
+      <i class="far fa-bell"></i>
+      <span class="badge badge-warning navbar-badge">{{totalmsg}}</span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-lg_new dropdown-menu-right">
+
+      <span class="dropdown-item dropdown-header">{{totalmsg}} Notifications</span>
+      <div class="dropdown-divider"></div>
+
+      <div *ngFor="let alarm of alarms">
+        <a href="#" class="dropdown-item">
+          <i class="fas fa-bell mr-2 alarm-icon-color"></i>
+          {{alarm.description}}
+          <!--<span class="float-right text-muted text-sm">3 mins</span>-->
+        </a>
+        <div class="dropdown-divider"></div>
+      </div>
+
+      <div *ngFor="let anomaly of anomalies">
+        <a href="#" class="dropdown-item">
+          <i class="fas fa-bolt mr-2 anomaly-icon-color"></i>
+          {{anomaly.description}}
+          <!--<span class="float-right text-muted text-sm">12 hours</span>-->
+        </a>
+        <div class="dropdown-divider"></div>
+      </div>
+
+      <div class="dropdown-divider"></div>
+      <!--<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>-->
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+      <i class="fas fa-expand-arrows-alt"></i>
+    </a>
+  </li>
+</ul>

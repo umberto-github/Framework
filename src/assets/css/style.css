@@ -1,0 +1,156 @@
+
+
+.putcenter {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.div_equals_3_elems {
+  width: auto;
+}
+
+.bkcolor {
+  background-color: #f2f2f2;
+}
+
+
+/*---------Gestione Tab Plugin--------------*/
+
+.tabs {
+  display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #ffffff; /*colore di background header tab*/
+  color: #b4b5be; /*colore del testo : nome tab*/
+  font-weight: bold;
+}
+
+.tab.active {
+  background-color: #db592a; /*colore background header tab attivo*/
+  border-bottom: 1px solid white;
+  color: #ffffff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/*dimensioni iframe*/
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+/*---------Gestione Tab Plugin--------------*/
+
+
+
+/*--------dimensioni logo------------*/
+.logo {
+  width: 200px;
+  height: auto;
+}
+/*--------dimensioni logo------------*/
+
+
+/*centro il popup nello schermo*/
+.modal-dialog {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+/*-----------tost message per allarmi ----------*/
+#btnToastWarning {
+  display: none;
+}
+
+#btnToastAlarm {
+  display: none;
+}
+
+/*-----------tost message per allarmi ----------*/
+
+/*------------Versione Software-----------*/
+.version_container div {
+  padding-left: 2px;
+}
+
+.vsdistanceup {
+  position: fixed;
+  top: 10px;
+  left: 10%;
+}
+.vsfont {
+  font-family: "Roboto Slab", serif;
+}
+.vsdistanceleft {
+  padding-left: 40%;
+}
+
+/*------------Versione Software-----------*/
+
+/* -------Stili per il pulsante fisso di pagina up ----------*/
+#scroll-to-top-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Stili per il pulsante */
+.wow-button {
+  background-color: #db592a;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Stili per la freccia */
+.arrow-up {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid #fff; /* Colore della freccia */
+}
+
+/* Effetto "wow" al passaggio del mouse */
+.wow-button:hover {
+  background-color: #0056b3; /* Cambia il colore al passaggio del mouse */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Aggiunge una leggera ombra al passaggio del mouse */
+}
+
+/* -------Stili per il pulsante fisso di pagina up ----------*/
+
+
+

@@ -1,0 +1,76 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  flex: 5;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.footer-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  flex: 5;
+  text-align: center;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Stili per il disclaimer */
+.footer-disclaimer {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-disclaimer p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Stili per i link */
+a {
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}

@@ -1,0 +1,18 @@
+
+.dropdown-menu-lg_new {
+  max-width: auto;
+  min-width: 280px;
+  padding: 0;
+}
+
+.alarm-icon-color{
+  color: red;
+}
+
+.anomaly-icon-color{
+  color: blue;
+}
+
+.operator-icon-star{
+  color: green;
+}
