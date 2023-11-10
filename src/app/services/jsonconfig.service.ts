@@ -18,6 +18,7 @@ export class JsonconfigService {
   public anomaliesUrl = '';
   public operatorsUrl = '';
   public logincheckUrl: string = '';
+  public appversion: string = '';
 
   constructor(private http: HttpClient) {
     this.framewinfo = new FrameWorkInfo();
@@ -36,6 +37,7 @@ export class JsonconfigService {
       this.framewinfo.frameinfo_wat_2 = this.jsondata.FrameInfo_WAT_2
       this.framewinfo.frameinfo_wat_3 = this.jsondata.FrameInfo_WAT_3
       this.framewinfo.frameinfo_wat_4 = this.jsondata.FrameInfo_WAT_4
+      this.appversion = this.jsondata.AppVersion
     });
   }
 

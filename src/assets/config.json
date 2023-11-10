@@ -1,4 +1,6 @@
 {   
+    "Separatore1":"--------------------------FrameWorkInfo---------------------------------",
+    "Commento_FrameInfo_Version":"versione del framework , viene incrementata su modifica del framework",
     "FrameInfo_Version":"Framework Version 12.3.0",
     "FrameInfo_System_OS":"Operative System Windows 10",
     "FrameInfo_System_Ram":"Ram 32GB",
@@ -7,7 +9,7 @@
     "FrameInfo_WAT_2":"2. Angular, Html, Css, JavaScript, Jquery, BootStrap",
     "FrameInfo_WAT_3":"3. Microsoft SQL Server 2017 Express",
     "FrameInfo_WAT_4":"4. Plugin management",
-    "Separatore":"--------------------------Routing Url------------------------------------",
+    "Separatore2":"--------------------------Routing Url------------------------------------",
     "Commento_WebApiBaseUrl":"Url base contenente la connessione alla web api",
     "WebApiBaseUrl": "https://localhost:7016/api",
     "Commento_WebApi_js_alarms_anomalies":"viene utilizzato solo nel file javascript alarm_warning.js",
@@ -19,5 +21,8 @@
     "Commento_WebApiOperators":"Viene utilizzato da Angular per ottenere i dati degli operatori attivi sulla linea",
     "WebApiOperators": "/operator/operinfo",
     "Commento_WebApiLogin":"Viene chiesto alla web api se il login è valido",
-    "WebApiLogin":"/login/check"
+    "WebApiLogin":"/login/check",
+    "Separatore3":"--------------------------Application Version-----------------------------",
+    "Commento_AppVersion":"versione dell'intera applicazione, viene incrementata quando si modificano le funzionalità ovvero i plugin",
+    "AppVersion":"Vs. 2.3.4"
 }

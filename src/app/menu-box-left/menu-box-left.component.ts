@@ -3,6 +3,7 @@ import { DatasharingService } from '../services/datasharing.service';
 import { DataItemAlarms } from '../structures/alarms';
 import { DataItemLogin } from '../structures/login';
 import { SessionService } from '../services/session.service';
+import { JsonconfigService } from '../services/jsonconfig.service';
 
 
 @Component({
@@ -12,7 +13,9 @@ import { SessionService } from '../services/session.service';
 })
 export class MenuBoxLeftComponent implements OnInit {
 
-  constructor(public datash: DatasharingService, private sessionService: SessionService) { }
+  constructor(public datash: DatasharingService, 
+              private sessionService: SessionService, 
+              public jsonConfigService: JsonconfigService) { }
 
   ngOnInit(): void {  }
 
