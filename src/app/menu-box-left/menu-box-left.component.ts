@@ -23,7 +23,7 @@ export class MenuBoxLeftComponent implements OnInit {
     this.datash.btnlogout_disable = true;
     this.datash.username = '';
     this.datash.password = '';
-    this.clearSession();
+    this.removeSession('session-login');
   }
 
   //salvataggio della sessione di login
@@ -40,6 +40,10 @@ export class MenuBoxLeftComponent implements OnInit {
   readFromSession(key: string): void {
     const sessionData = this.sessionService.get(key);
     console.log('Dati dalla sessionStorage:', sessionData);
+  }
+
+  removeSession(key:string){
+    this.sessionService.remove(key);
   }
 
   //cancellazione della variabili di sessione
