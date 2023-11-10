@@ -12,19 +12,19 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-header putcenter">
-        <p><b>Framework Version 12.3.0</b></p>
+        <p><b>{{this.jsonConfigService.framewinfo.frameinfo_version}}</b></p>
       </div>
       <!-- Contenuto del modale -->
       <div class="modal-body">
         <u>System</u> :<br>
-        Operative System Windows 10<br>
-        Ram 32GB<br>
-        Intel 7 Core8<br><br>
+        {{this.jsonConfigService.framewinfo.frameinfo_system_os}}<br>
+        {{this.jsonConfigService.framewinfo.frameinfo_system_ram}}<br>
+        {{this.jsonConfigService.framewinfo.frameinfo_system_cpu}}<br><br>
         <u>Web Application Tecnology</u>: <br>
-        1. C#<br>
-        2. Angular, Html, Css, JavaScript, Jquery, BootStrap<br>
-        3. Microsoft SQL Server 2017 Express<br>
-        3. Plugin management
+        {{this.jsonConfigService.framewinfo.frameinfo_wat_1}}<br>
+        {{this.jsonConfigService.framewinfo.frameinfo_wat_2}}<br>
+        {{this.jsonConfigService.framewinfo.frameinfo_wat_3}}<br>
+        {{this.jsonConfigService.framewinfo.frameinfo_wat_4}}
       </div>
       <!-- Pulsante di chiusura del modale -->
       <div class="modal-footer">

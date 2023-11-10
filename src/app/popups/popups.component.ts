@@ -14,7 +14,7 @@ import { SessionService } from '../services/session.service';
 export class PopupsComponent implements OnInit {
 
   constructor(private apiService: ApiService, public datash: DatasharingService,
-              private jsonConfigService: JsonconfigService, private sessionService: SessionService) { }
+              public jsonConfigService: JsonconfigService, private sessionService: SessionService) { }
 
   ngOnInit(): void {
   }

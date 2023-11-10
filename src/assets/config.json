@@ -1,4 +1,13 @@
-{
+{   
+    "FrameInfo_Version":"Framework Version 12.3.0",
+    "FrameInfo_System_OS":"Operative System Windows 10",
+    "FrameInfo_System_Ram":"Ram 32GB",
+    "FrameInfo_System_Cpu":"Intel 7 Core8",
+    "FrameInfo_WAT_1":"1. C#",
+    "FrameInfo_WAT_2":"2. Angular, Html, Css, JavaScript, Jquery, BootStrap",
+    "FrameInfo_WAT_3":"3. Microsoft SQL Server 2017 Express",
+    "FrameInfo_WAT_4":"4. Plugin management",
+    "Separatore":"--------------------------Routing Url------------------------------------",
     "Commento_WebApiBaseUrl":"Url base contenente la connessione alla web api",
     "WebApiBaseUrl": "https://localhost:7016/api",
     "Commento_WebApi_js_alarms_anomalies":"viene utilizzato solo nel file javascript alarm_warning.js",
