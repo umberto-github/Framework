@@ -39,15 +39,15 @@
 .login-show{
     width: 10px;
     height: 96px;
-    border: 1px solid #0000F9;
+    border: 1px solid #333333;
     position: absolute;
     top: 100%;
     right: 0;
     margin: 0;
     padding: 0;
     z-index:99;
-    background-color: #DB592A;
-    color:#fff;
+    background-color: #F2F2F2;
+    color:#333333;
     /*opacity:0.5;*/
 }
 
