@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DatasharingService } from './services/datasharing.service';
 import { SessionService } from './services/session.service';
+import { SvglogoComponent } from './svglogo/svglogo.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SessionService } from './services/session.service';
     MenuBoxRightComponent,
     PopupsComponent,
     FooterComponent,
+    SvglogoComponent,
   ],
   imports: [
     BrowserModule,

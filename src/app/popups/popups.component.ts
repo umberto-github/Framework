@@ -13,9 +13,6 @@ import { SessionService } from '../services/session.service';
 })
 export class PopupsComponent implements OnInit {
 
-  //username: string = ''
-  //password: string = ''
-
   constructor(private apiService: ApiService, public datash: DatasharingService,
               private jsonConfigService: JsonconfigService, private sessionService: SessionService) { }
 
