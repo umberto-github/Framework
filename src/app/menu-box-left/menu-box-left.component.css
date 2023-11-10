@@ -68,6 +68,7 @@
     top: 48px;
     right: 15px;
     cursor: pointer;
+    color: #0000F9;
 }
 
 .login-show:hover{
@@ -77,6 +78,7 @@
     }
     #login-box-triangle{
         right:198px;
+        color: #333333;
     }
 
 }

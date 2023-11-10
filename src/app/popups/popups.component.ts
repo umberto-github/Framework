@@ -66,7 +66,7 @@ export class PopupsComponent implements OnInit {
   saveToSession(key: string): void {
     const dataToSave = { 
       user: this.datash.dataitemlogin.username,
-      name: this.datash.dataitemlogin.name,
+      name: this.datash.dataitemlogin.userType,
       level: this.datash.dataitemlogin.level
     };
     this.sessionService.set(key, dataToSave);

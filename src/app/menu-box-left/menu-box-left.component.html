@@ -67,12 +67,12 @@
 
 <!--tendina laterale dati login-->
 <div class="login-show" *ngIf="datash.dataitemlogin.enabled === 'true'">
-  <i id="login-box-triangle" class="fa-solid fa-play fa-rotate-180 fa-2xl"
-    style="color: #0000F9;"></i>
-  <div id="login-info-container">
-    <p id="logged_user" class="nav-link vsdistanceup logged-user"><b>
-        <h4>Login :</h4>
-        {{datash.dataitemlogin.level}} : {{datash.dataitemlogin.username}} <br>
-        {{datash.dataitemlogin.time}}</b></p>
+  <i id="login-box-triangle" class="fa-solid fa-play fa-rotate-180 fa-2xl"></i>
+    <div id="login-info-container">
+      <p id="logged_user" class="nav-link vsdistanceup logged-user"><b>
+          <h4><u>Login</u> :</h4>
+          {{datash.dataitemlogin.userType}} : {{datash.dataitemlogin.username}}
+          <br>
+          {{datash.dataitemlogin.time}}</b></p>
+    </div>
   </div>
-</div>
