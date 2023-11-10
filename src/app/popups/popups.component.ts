@@ -4,6 +4,7 @@ import { JsonconfigService } from '../services/jsonconfig.service';
 import { DataItemLogin } from '../structures/login';
 import { Observable } from 'rxjs';
 import { DatasharingService } from '../services/datasharing.service';
+import { SessionService } from '../services/session.service';
 
 @Component({
   selector: 'app-popups',
@@ -15,7 +16,8 @@ export class PopupsComponent implements OnInit {
   //username: string = ''
   //password: string = ''
 
-  constructor(private apiService: ApiService, public datash: DatasharingService, private jsonConfigService: JsonconfigService) { }
+  constructor(private apiService: ApiService, public datash: DatasharingService,
+              private jsonConfigService: JsonconfigService, private sessionService: SessionService) { }
 
   ngOnInit(): void {
   }
@@ -36,6 +38,12 @@ export class PopupsComponent implements OnInit {
           if (this.datash.dataitemlogin.enabled == "true") {
             this.datash.btnlogin_disable = true;
             this.datash.btnlogout_disable = false;
+            
+            //setto la variabile di sessione login a ON
+            //la variabile verrà utilizzata all'interno dei plugin
+            //per capire se il login è attivo oppure no
+            this.saveToSession('session-login');
+
             //clicco il pulsante di chiusura modale
             let btn = document.getElementById('btnlogin_close');
             if (btn)
@@ -53,5 +61,26 @@ export class PopupsComponent implements OnInit {
 
   }
 
+
+  //salvataggio della sessione di login
+  saveToSession(key: string): void {
+    const dataToSave = { 
+      user: this.datash.dataitemlogin.username,
+      name: this.datash.dataitemlogin.name,
+      level: this.datash.dataitemlogin.level
+    };
+    this.sessionService.set(key, dataToSave);
+  }
+
+  //lettura della variabile di sessione
+  readFromSession(key: string): void {
+    const sessionData = this.sessionService.get(key);
+    console.log('Dati dalla sessionStorage:', sessionData);
+  }
+
+  //cancellazione della variabili di sessione
+  clearSession(): void {
+    this.sessionService.clear();
+  }
 
 }

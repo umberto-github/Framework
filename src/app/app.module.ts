@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DatasharingService } from './services/datasharing.service';
+import { SessionService } from './services/session.service';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { DatasharingService } from './services/datasharing.service';
     HttpClientModule, // Importa il modulo HttpClientModule
     FormsModule
   ],
-  providers: [DatasharingService],
+  providers: [DatasharingService,SessionService],
   bootstrap: [AppComponent, MenuBoxLeftComponent, PopupsComponent]
 })
 export class AppModule { }

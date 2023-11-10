@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DatasharingService } from '../services/datasharing.service';
 import { DataItemAlarms } from '../structures/alarms';
 import { DataItemLogin } from '../structures/login';
+import { SessionService } from '../services/session.service';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { DataItemLogin } from '../structures/login';
 })
 export class MenuBoxLeftComponent implements OnInit {
 
-  constructor(public datash: DatasharingService) { }
+  constructor(public datash: DatasharingService, private sessionService: SessionService) { }
 
   ngOnInit(): void {  }
 
@@ -22,6 +23,28 @@ export class MenuBoxLeftComponent implements OnInit {
     this.datash.btnlogout_disable = true;
     this.datash.username = '';
     this.datash.password = '';
+    this.clearSession();
+  }
+
+  //salvataggio della sessione di login
+  saveToSession(key: string): void {
+    const dataToSave = { 
+      user: this.datash.dataitemlogin.username,
+      name: this.datash.dataitemlogin.name,
+      level: this.datash.dataitemlogin.level
+    };
+    this.sessionService.set(key, dataToSave);
+  }
+
+  //lettura della variabile di sessione
+  readFromSession(key: string): void {
+    const sessionData = this.sessionService.get(key);
+    console.log('Dati dalla sessionStorage:', sessionData);
+  }
+
+  //cancellazione della variabili di sessione
+  clearSession(): void {
+    this.sessionService.clear();
   }
 
 }
