@@ -1,3 +1,7 @@
+# Interfaces Framework To Plugins
+  L'unica variabile di comunicazione è la variabile di sessione "session-login" la quale
+  rappresenta un oggetto  contenente (user, name, level)
+
 # Prova
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
