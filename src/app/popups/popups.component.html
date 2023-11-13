@@ -12,19 +12,14 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-header putcenter">
-        <p><b>{{this.jsonConfigService.framewinfo.frameinfo_version}}</b></p>
+        <div [innerHTML]='jsonConfigService.frameinfo_version'></div>
       </div>
       <!-- Contenuto del modale -->
       <div class="modal-body">
         <u>System</u> :<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_system_os}}<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_system_ram}}<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_system_cpu}}<br><br>
-        <u>Web Application Tecnology</u>: <br>
-        {{this.jsonConfigService.framewinfo.frameinfo_wat_1}}<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_wat_2}}<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_wat_3}}<br>
-        {{this.jsonConfigService.framewinfo.frameinfo_wat_4}}
+        <div [innerHTML]='jsonConfigService.frameinfo_system'></div>
+        <br><u>Web Application Tecnology</u>: <br>
+        <div [innerHTML]='jsonConfigService.frameinfo_wat'></div>
       </div>
       <!-- Pulsante di chiusura del modale -->
       <div class="modal-footer">
@@ -49,10 +44,10 @@
       </div>
       <!-- Contenuto del modale -->
       <div class="modal-body">
-        <u>Programmers</u> :<br><br>
-        <b>Alessio Bianchi</b> - from 2012 till now<br>
-        <b>Mario Rossi</b> - from 2019 till now<br>
-        <b>Andrea Verdi</b> - from 2010 till now
+         <em><u>For support contact</u></em> :<br><br>
+        <div *ngFor="let item of jsonConfigService.programmers.description">
+          <div [innerHTML]='item'></div>
+        </div>
       </div>
       <!-- Pulsante di chiusura del modale -->
       <div class="modal-footer">
@@ -114,11 +109,7 @@
       </div>
       <!-- Contenuto del modale -->
       <div class="modal-body">
-        <br>Via Copernico 2, Z.l. Santa Scolastica,<br>
-        64013 Corropoli (TE), Italy<br>
-        P.IVA 01053520670<br>
-        marketing@tecnomatic.Italy<br>
-        +39 0861839030<br>
+        <br><div [innerHTML]='jsonConfigService.contactinfo'></div>
       </div>
       <!-- Pulsante di chiusura del modale -->
       <div class="modal-footer">
